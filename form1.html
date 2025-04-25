@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="formOne.js"></script>
+    
+</head>
+<body>
+    <button onclick="hi()">hi</button>
+    <form name="formName" onsubmit="return submitForm()">
+        <div>
+            <label for="nameId">Name</label>
+            <span style="color: brown;">*</span>
+            <span>:</span>
+            <input type="text" id="nameId" name="nameName" required>
+        </div>
+        <div>
+            <label for="id1">Number</label>
+            <span style="color: red;">*</span>
+            <span>:</span>
+            <input type="number" id="id1" name="number" required>
+        </div>
+        <div>
+            <button type="submit" value="submit">Submit</button>
+            <button type="reset" value="Clear">Clear</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assign.js"></script>
+</head>
+<body>
+    <button onclick="onClick(2,3)">ClickMe</button>
+
+    <form action="" name="formName" id="formId" onsubmit="return submitForm()">
+        <div>
+            <label for="nameId">Name</label><span style="color: red;">*</span><span>:</span>
+            <input type="text" id="nameId" name="nameName" required>
+        </div>
+
+        <div>
+            <label for="emailId">Email</label><span style="color: red;">*</span><span>:</span>
+            <input type="email" id="emailId" name="emailName" required>
+        </div>
+
+        <div>
+            <label for="ageId">Age</label><span style="color: red;">*</span><span>:</span>
+            <input type="number" id="ageId" name="ageName" required>
+        </div>
+
+        <div>
+            <label for="genderId">Gender</label><span style="color: red;">*</span><span>:</span>
+            <select id="genderId" name="genderName" required>
+                <option value="">--Select--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="countryId">Country</label><span style="color: red;">*</span><span>:</span>
+            <input type="text" id="countryId" name="countryName" required>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</body>
+</html>
